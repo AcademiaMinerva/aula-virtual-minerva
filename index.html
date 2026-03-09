@@ -418,21 +418,35 @@
     // ESTRUCTURA DEL AULA VIRTUAL
     const courses = [
       {
-        id: "rm",
-        nombre: "Razonamiento Matemático",
-        descripcion: "Material organizado por temas, ejercicios y prácticas.",
+        id: "general",
+        nombre: "Material General del Ciclo",
+        descripcion: "Acceso directo a la carpeta principal del ciclo en Google Drive.",
         temas: [
           {
-            nombre: "Series y sucesiones",
+            nombre: "Carpeta principal",
             pdfs: [
-              { titulo: "Teoría de series", descripcion: "Separata base del tema.", url: "https://drive.google.com/file/d/TU_ID_1/view" },
-              { titulo: "Práctica dirigida", descripcion: "Ejercicios resueltos y propuestos.", url: "https://drive.google.com/file/d/TU_ID_2/view" }
+              {
+                titulo: "Abrir carpeta general del ciclo",
+                descripcion: "Aquí están tus cursos, semanas y materiales tal como los organizas en Drive.",
+                url: MAIN_FOLDER_URL
+              }
             ]
-          },
+          }
+        ]
+      },
+      {
+        id: "rm",
+        nombre: "Razonamiento Matemático",
+        descripcion: "Ejemplo de acceso por curso. Luego puedes reemplazar este link por la carpeta específica del curso.",
+        temas: [
           {
-            nombre: "Lógica proposicional",
+            nombre: "Semanas",
             pdfs: [
-              { titulo: "Guía de lógica", descripcion: "Conectores, tablas y equivalencias.", url: "https://drive.google.com/file/d/TU_ID_3/view" }
+              {
+                titulo: "Abrir carpeta de Razonamiento Matemático",
+                descripcion: "Por ahora apunta a la carpeta general del ciclo.",
+                url: MAIN_FOLDER_URL
+              }
             ]
           }
         ]
@@ -440,19 +454,16 @@
       {
         id: "arit",
         nombre: "Aritmética",
-        descripcion: "Temas fundamentales para UNC y CEPUNC.",
+        descripcion: "Ejemplo de acceso por curso. Luego puedes reemplazar este link por la carpeta específica del curso.",
         temas: [
           {
-            nombre: "Divisibilidad",
+            nombre: "Semanas",
             pdfs: [
-              { titulo: "Divisibilidad - teoría", descripcion: "Criterios y aplicaciones.", url: "https://drive.google.com/file/d/TU_ID_4/view" },
-              { titulo: "Banco de preguntas", descripcion: "Problemas tipo examen.", url: "https://drive.google.com/file/d/TU_ID_5/view" }
-            ]
-          },
-          {
-            nombre: "MCD y MCM",
-            pdfs: [
-              { titulo: "Separata MCD y MCM", descripcion: "Métodos rápidos y prácticos.", url: "https://drive.google.com/file/d/TU_ID_6/view" }
+              {
+                titulo: "Abrir carpeta de Aritmética",
+                descripcion: "Por ahora apunta a la carpeta general del ciclo.",
+                url: MAIN_FOLDER_URL
+              }
             ]
           }
         ]
@@ -460,18 +471,16 @@
       {
         id: "alg",
         nombre: "Álgebra",
-        descripcion: "Material por unidades y nivel preuniversitario.",
+        descripcion: "Ejemplo de acceso por curso. Luego puedes reemplazar este link por la carpeta específica del curso.",
         temas: [
           {
-            nombre: "Productos notables",
+            nombre: "Semanas",
             pdfs: [
-              { titulo: "Teoría + ejemplos", descripcion: "Resumen completo del tema.", url: "https://drive.google.com/file/d/TU_ID_7/view" }
-            ]
-          },
-          {
-            nombre: "Ecuaciones",
-            pdfs: [
-              { titulo: "Ecuaciones y métodos", descripcion: "Aplicación directa tipo UNC.", url: "https://drive.google.com/file/d/TU_ID_8/view" }
+              {
+                titulo: "Abrir carpeta de Álgebra",
+                descripcion: "Por ahora apunta a la carpeta general del ciclo.",
+                url: MAIN_FOLDER_URL
+              }
             ]
           }
         ]
@@ -479,12 +488,16 @@
       {
         id: "geo",
         nombre: "Geometría",
-        descripcion: "Teoremas, propiedades y entrenamiento visual.",
+        descripcion: "Ejemplo de acceso por curso. Luego puedes reemplazar este link por la carpeta específica del curso.",
         temas: [
           {
-            nombre: "Triángulos",
+            nombre: "Semanas",
             pdfs: [
-              { titulo: "Guía de triángulos", descripcion: "Ángulos, cevianas y más.", url: "https://drive.google.com/file/d/TU_ID_9/view" }
+              {
+                titulo: "Abrir carpeta de Geometría",
+                descripcion: "Por ahora apunta a la carpeta general del ciclo.",
+                url: MAIN_FOLDER_URL
+              }
             ]
           }
         ]
@@ -492,12 +505,16 @@
       {
         id: "fis",
         nombre: "Física",
-        descripcion: "Teoría y problemas por bloques.",
+        descripcion: "Ejemplo de acceso por curso. Luego puedes reemplazar este link por la carpeta específica del curso.",
         temas: [
           {
-            nombre: "Movimiento rectilíneo",
+            nombre: "Semanas",
             pdfs: [
-              { titulo: "MRU y MRUV", descripcion: "Fórmulas y práctica guiada.", url: "https://drive.google.com/file/d/TU_ID_10/view" }
+              {
+                titulo: "Abrir carpeta de Física",
+                descripcion: "Por ahora apunta a la carpeta general del ciclo.",
+                url: MAIN_FOLDER_URL
+              }
             ]
           }
         ]
