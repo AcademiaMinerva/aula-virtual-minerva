@@ -372,6 +372,7 @@
         <div class="library-banner">
           <h3>Biblioteca virtual</h3>
           <p>Acceso directo a libros, bancos de preguntas y material complementario.</p>
+          <p style="margin:0 0 12px;"><a href="#" id="mainFolderLink" target="_blank" rel="noopener noreferrer" style="display:inline-block;text-decoration:none;padding:10px 14px;border-radius:12px;background:#e0ecff;color:#1d4ed8;font-weight:800;border:1px solid #bfdbfe;">Abrir carpeta general del ciclo</a></p>
           <a href="#" id="libraryLink" target="_blank" rel="noopener noreferrer">Abrir biblioteca</a>
         </div>
       </aside>
@@ -402,7 +403,7 @@
 
   <script>
     // REEMPLAZA ESTOS LINKS POR LOS DE TU GOOGLE DRIVE
-    const LIBRARY_URL = "https://drive.google.com/drive/folders/TU_LINK_BIBLIOTECA";
+    const LIBRARY_URL = "https://drive.google.com/drive/folders/1PPw-CocwQFvYhmbODgFFkUTvl2eZrpMe?usp=sharing";
 
     // BASE DE ESTUDIANTES DE EJEMPLO
     const students = [
@@ -410,6 +411,9 @@
       { dni: "71234567", nombre: "María Sánchez Vásquez", ciclo: "Grupo Selecto" },
       { dni: "70000001", nombre: "Demo Minerva", ciclo: "Ciclo Integral" }
     ];
+
+    // LINK PRINCIPAL DE TU DRIVE
+    const MAIN_FOLDER_URL = "https://drive.google.com/drive/folders/1PPw-CocwQFvYhmbODgFFkUTvl2eZrpMe?usp=sharing";
 
     // ESTRUCTURA DEL AULA VIRTUAL
     const courses = [
@@ -515,11 +519,13 @@
     const contentTitle = document.getElementById('contentTitle');
     const contentSubtitle = document.getElementById('contentSubtitle');
     const libraryLink = document.getElementById('libraryLink');
+    const mainFolderLink = document.getElementById('mainFolderLink');
 
     let currentCourseIndex = 0;
     let currentTopicIndex = 0;
 
     libraryLink.href = LIBRARY_URL;
+    mainFolderLink.href = MAIN_FOLDER_URL;
 
     function showMessage(text, type = '') {
       message.textContent = text;
